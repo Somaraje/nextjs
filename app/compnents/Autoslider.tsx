@@ -4,8 +4,8 @@ import "../css/slider.css";
 
 const newsImages: string[] = [
   "/images/learn_slider1.jpg",
-  "/images/learn_slider2.jpg",
-  "/images/learn_slider3.jpg",
+  "/images/Learn_slider2.jpg",
+  "/images/Learn_slider3.jpg",
 ];
 
 export default function NewsSlider(): React.ReactElement {
