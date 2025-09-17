@@ -1,0 +1,98 @@
+.overlap-container {
+  position: relative;
+}
+
+/* Each section takes full screen */
+.overlap-section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add different backgrounds */
+.section1,
+.section2,
+.section3 {
+  z-index: 1;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+/* Layout wrapper for left and right parts */
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  gap: 40px;
+}
+
+/* Left content styling */
+.left_part_section1 {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.over_head1 {
+  font-size: 310%;
+  width: 100%;
+}
+
+.over_para1 {
+  width: 100%;
+}
+
+/* Right image styling */
+.right_part_section1 {
+  flex: 1;
+  /* display: flex; */
+  justify-content: flex-end;
+  align-items: center;
+  margin: 63px;
+}
+
+.right_part_section1 img {
+  width: 100%;
+  max-width: 490px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 25px;
+  border-radius: 40px;
+}
+
+/* Optional button styling */
+.over_button1 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+  padding: 17px 16px;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+.over_button1:hover{
+  background-color: #1abc9c;
+}
+.team_span {
+  margin-left: 70%;
+}
+.number{
+    padding: 5px 8px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+.team_span{
+      padding: 10px 10px;
+    border: 2px solid grey;
+    border-radius: 12px;
+}

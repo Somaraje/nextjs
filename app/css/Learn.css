@@ -1,0 +1,164 @@
+.Learn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfb;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+.learn_left_part{
+    margin-left: 10%;
+    padding-left: 5%;
+}
+.learn_btn{
+    border: 1px solid grey;
+    padding: 11px 14px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.Learn_button_1{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.Learn_head_left{
+    padding-top: 9px;
+    font-size: 49px;
+    width: 60%;
+}
+.Learn_head{
+    color: #19402d;
+}
+.Learn_head_para{
+    width: 53%;
+    padding-top: 4%;
+}
+.Learn_but_2{
+    border-radius: 24px;
+    border: 1px solid grey;
+    margin-top: 35px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    color: green;
+}
+.Learn_icon_click{
+    margin-right: 5px;
+    font-size: 37px;
+} 
+/* slider */
+/* styles/slider.css - global CSS used by SliderPure component */
+:root{
+  --slider-height: 420px;
+  --dot-size: 12px;
+  --dot-gap: 10px;
+}
+
+/* basic layout */
+.slider {
+  width: 100%;
+  max-width: 1100px;
+  height: var(--slider-height);
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.15);
+  background: #111; /* fallback while images load */
+}
+
+/* hide the radios */
+.slider input[type="radio"] {
+  display: none;
+}
+
+/* container that holds slides (using flex) */
+.slider .slides {
+  display: flex;
+  width: 300%;              /* three slides -> 300% */
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* each slide occupies 100% of slider width */
+.slider .slide {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* move slides based on which radio is checked */
+#slide1:checked ~ .slides { transform: translateX(0%); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+
+/* dot controls (centered) */
+.slider .controls {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--dot-gap);
+  z-index: 10;
+}
+
+.slider .controls label {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* highlight the active dot */
+#slide1:checked ~ .controls label[for="slide1"],
+#slide2:checked ~ .controls label[for="slide2"],
+#slide3:checked ~ .controls label[for="slide3"] {
+  background: #fff;
+  transform: scale(1.25);
+}
+
+/* previous/next arrows (optional) */
+.slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+}
+
+.slider .arrow.prev { left: 12px; }
+.slider .arrow.next { right: 12px; }
+.learn_right_part{
+    padding-right: 6%;
+    width: 77%;
+}
+
+/* small responsive tweaks */
+@media (max-width: 800px) {
+  :root { --slider-height: 280px; }
+  .slider { border-radius: 8px; }
+}

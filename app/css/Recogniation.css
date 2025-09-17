@@ -1,0 +1,31 @@
+.recogination{
+    background-color: #336549;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: white;
+    font-size: 121%;
+}
+.reg_main{
+    margin-left: 14%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+.reg_para2{
+    width: 81%;
+    margin-top: 25px;
+}
+.small_slider{
+    width: 22%;
+    
+    margin-right: 12%;
+}
+.ref_left{
+    width: 60%;
+}
+.reg_right{
+    margin: 50px;
+}
+.reg_para1{
+    margin-bottom: 25px;
+}

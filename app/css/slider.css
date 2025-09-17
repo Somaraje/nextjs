@@ -1,0 +1,33 @@
+:root {
+  --news-slider-height: 400px; /* adjust as needed */
+}
+
+.news-slider {
+  width: 100%;
+  max-width: 1100px;
+  height: var(--news-slider-height);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.news-slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  height: 100%;
+}
+
+.news-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.news-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ Image always fits */
+  display: block;
+  border-radius: 12px;
+}

@@ -1,0 +1,117 @@
+.footer {
+  background: #1a2b1f;
+  color: white;
+  padding: 60px 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left section */
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.subscribe-box {
+  display: flex;
+  border: 1px solid #555;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.subscribe-box button {
+  background: #3da66d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Center & Right sections */
+.footer-center h4,
+.footer-right h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-center ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li,
+.footer-right li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-center li:hover,
+.footer-right li:hover {
+  color: #3da66d;
+}
+.footer-right_column2 li:hover {
+  color: #3da66d;
+}
+.footer-right_column2 li{
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languages span {
+  margin-left: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.languages span:hover {
+  color: #3da66d;
+}
+.footer-center{
+   margin-left: 55%;
+}
+.footer-right{
+  margin-left: 28px;
+}

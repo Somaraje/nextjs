@@ -1,0 +1,73 @@
+/* .Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  position: sticky;
+  top: 0;
+} */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it above other content */
+  background-color: #fff; /* important, otherwise content shows through */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow when scrolling */
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+}
+
+.btn_items {
+    color: green;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-left: 3.5rem;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.Icon_list {
+  display: flex;
+  gap: 1rem;
+}
+
+.all_items {
+  border: 2px solid gainsboro;
+  padding: 15px;
+  color: green;
+  border-radius: 50%;
+}
+.nav-links a:hover{
+    color: green;
+}
+.btn_items:hover{
+  transform: translateY(-10px);
+}
+.phone_icon{
+    margin-right: 12px;
+    font-size: 20px;
+}
